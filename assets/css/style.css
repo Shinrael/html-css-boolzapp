@@ -57,6 +57,7 @@ body{
 
 .column-left .top-left{
   height: 25%;
+  background-color: var(--light-grey);
 }
 
 .column-left .top-left .account{
@@ -65,6 +66,7 @@ body{
 
 .column-left .top-left .notification{
   height: 35%;
+  background-color: var(--light-blue);
 }
 
 .column-left .top-left .search{
@@ -72,6 +74,7 @@ body{
 }
 
 .column-left .bottom-left{
+  background-color: white;
   height: 75%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -83,16 +86,19 @@ body{
 
 .column-right .top-right{
   height: 10%;
+  background-color: var(--light-grey);
 }
 
 .column-right .center-right{
   height: 80%;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-image: url(../img/mine.jpg);
 }
 
 .column-right .bottom-right{
   height: 10%;
+  background-color: var(--light-grey);
 }
 
 /* Resolution Tablet */
