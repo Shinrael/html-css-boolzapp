@@ -13,6 +13,7 @@
   --color-icon-bottom:#6B7376;
   --dark-grey: #4F7485;
   --span-card:#B6B9BB;
+  --bar-message:#F3EEEA;
 }
 
 /* Utility */
@@ -200,7 +201,7 @@ body{
 
 .column-right .bottom-right{
   height: 10%;
-  background-color: var(--light-grey);
+  background-color: var(--bar-message);
 }
 
 /* Resolution Tablet */
