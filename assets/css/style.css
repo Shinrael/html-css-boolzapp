@@ -58,6 +58,8 @@ body{
 
 .column-left .bottom-left{
   height: 75%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .column-right{
@@ -71,8 +73,22 @@ body{
 
 .column-right .center-right{
   height: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .column-right .bottom-right{
   height: 10%;
+}
+
+/* Resolution Tablet */
+
+@media screen and (max-width:992px){
+
+}
+
+/* Resolution Mobile */
+
+@media screen and (max-width:540px){
+
 }
