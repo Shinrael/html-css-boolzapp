@@ -154,10 +154,7 @@ body{
   height: 80%;  
   border: none;
   position: absolute;
-
 }
-
-
 
 .column-left .top-left .search input::placeholder{
   color: var(--color-icon-top);
