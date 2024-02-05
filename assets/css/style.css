@@ -136,17 +136,33 @@ body{
 }
 
 .column-left .top-left .search{
-  height:20%
+  height:20%;
+  position: relative;
+}
+
+.column-left .top-left .search .fa-magnifying-glass{
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  top: 10px;
+  font-size: .8rem;
+  color: var(--span-card);
 }
 
 .column-left .top-left .search input{
   width: 95%;
   height: 80%;  
+  border: none;
+  position: absolute;
+
 }
+
+
 
 .column-left .top-left .search input::placeholder{
   color: var(--color-icon-top);
   font-size: .8rem;
+  padding-left: 40px;
 }
 
 .column-left .bottom-left{
@@ -160,6 +176,7 @@ body{
   width: 97%;
   height: 15%;
   border: 1px solid var(--light-grey);
+  border-bottom: none;
 }
 
 .column-left .bottom-left .card .card-l{
