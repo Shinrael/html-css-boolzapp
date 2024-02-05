@@ -12,6 +12,7 @@
   --color-icon-top: #B1B1B1;
   --color-icon-bottom:#6B7376;
   --dark-grey: #4F7485;
+  --span-card:#B6B9BB;
 }
 
 /* Utility */
@@ -38,8 +39,8 @@
 
 .circle{
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   overflow: hidden;
   margin: 0 10px 0 10px;
 }
@@ -50,8 +51,14 @@
 }
 
 .icon{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0 12px;
+}
+
+.zoom-icon{
+  content: "\f002";
+  font-family: "Font Awesome Kit";
+  font-size: 1.5rem;
 }
 
 /* CSS */
@@ -71,7 +78,7 @@ body{
 }
 
 .column-left{
-  width: 25%;
+  width: 30%;
 }
 
 .column-left .top-left{
@@ -95,7 +102,7 @@ body{
 }
 
 .column-left .top-left .notification{
-  height: 35%;
+  height: 40%;
   background-color: var(--light-blue);
 }
 
@@ -108,7 +115,7 @@ body{
 }
 
 .column-left .top-left .notification .not-l .circle i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--light-blue);
 }
 
@@ -118,13 +125,27 @@ body{
   font-weight: bold;
 }
 
+.column-left .top-left .notification .not-r span{
+  font-size: .8rem;
+}
+
 .column-left .top-left .notification .not-r a{
   color: var(--dark-grey);
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 .column-left .top-left .search{
-  height:25%
+  height:20%
+}
+
+.column-left .top-left .search input{
+  width: 95%;
+  height: 80%;  
+}
+
+.column-left .top-left .search input::placeholder{
+  color: var(--color-icon-top);
+  font-size: .8rem;
 }
 
 .column-left .bottom-left{
@@ -134,8 +155,35 @@ body{
   overflow-x: hidden;
 }
 
+.column-left .bottom-left .card{
+  height: 100px;
+  border: 1px solid var(--light-grey);
+}
+
+.column-left .bottom-left .card .card-l{
+  width: 20%;
+}
+
+.column-left .bottom-left .card .card-c{
+  width: 60%;
+  padding-left: 15px;
+}
+
+.column-left .bottom-left .card span{
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--span-card);
+}
+
+.column-left .bottom-left .card .card-r{
+  width: 20%;
+  height: 100%;
+  align-items: flex-end;
+  padding: 0 15px 15px 0;
+}
+
 .column-right{
-  width: 75%;
+  width: 70%;
 }
 
 .column-right .top-right{
@@ -173,6 +221,7 @@ body{
 
   .column-left .top-left .account{
     height: 100%;
+    padding-left: 15px;
   }
 
   .column-left .top-left .account .icon{
@@ -189,6 +238,15 @@ body{
 
   .column-left .bottom-left{
     height: 90%;
+  }
+
+  .column-left .bottom-left .card .card-l{
+    padding-left: 15px;
+  }
+
+  .column-left .bottom-left .card .card-c,
+  .column-left .bottom-left .card .card-r{
+    display: none;
   }
 
   .column-right{
