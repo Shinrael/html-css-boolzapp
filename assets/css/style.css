@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+.dir-column{
+  flex-direction: column;
+}
+
 /* CSS */
 
 body{
@@ -49,11 +53,22 @@ body{
 
 .column-left{
   width: 25%;
-  flex-direction: column;
 }
 
 .column-left .top-left{
   height: 25%;
+}
+
+.column-left .top-left .account{
+  height: 40%;
+}
+
+.column-left .top-left .notification{
+  height: 35%;
+}
+
+.column-left .top-left .search{
+  height:25%
 }
 
 .column-left .bottom-left{
@@ -64,7 +79,6 @@ body{
 
 .column-right{
   width: 75%;
-  flex-direction: column;
 }
 
 .column-right .top-right{
@@ -84,11 +98,52 @@ body{
 /* Resolution Tablet */
 
 @media screen and (max-width:992px){
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .column-left{
+    width: 10%;
+  }
+
+  .column-left .top-left{
+    height: 10%;
+  }
+
+  .column-left .top-left .account{
+    height: 100%;
+  }
+
+  .column-left .top-left .notification{
+    display: none;
+  }
+
+  .column-left .top-left .search{
+    display: none;
+  }
+
+  .column-left .bottom-left{
+    height: 90%;
+  }
+
+  .column-right{
+    width: 90%;
+  }
+
 
 }
 
 /* Resolution Mobile */
 
 @media screen and (max-width:540px){
+
+  .column-left{
+    display: none;
+  }
+
+  .column-right{
+    width: 100%;
+  }
 
 }
