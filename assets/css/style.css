@@ -157,7 +157,8 @@ body{
 }
 
 .column-left .bottom-left .card{
-  height: 100px;
+  width: 97%;
+  height: 15%;
   border: 1px solid var(--light-grey);
 }
 
