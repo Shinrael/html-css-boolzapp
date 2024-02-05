@@ -11,6 +11,7 @@
   --light-blue: #8EDAFC;
   --color-icon-top: #B1B1B1;
   --color-icon-bottom:#6B7376;
+  --dark-grey: #4F7485;
 }
 
 /* Utility */
@@ -33,6 +34,24 @@
 
 .dir-column{
   flex-direction: column;
+}
+
+.circle{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  margin: 0 10px 0 10px;
+}
+
+.container img{
+  height: 100%;
+  width: 100%;  
+}
+
+.icon{
+  font-size: 1.5rem;
+  padding: 0 12px;
 }
 
 /* CSS */
@@ -64,9 +83,44 @@ body{
   height: 40%;
 }
 
+.column-left .top-left .account .acc-l{
+  width: 50%;
+}
+
+.column-left .top-left .account .acc-r{
+  justify-content: flex-end;
+  width: 50%;
+  color: var(--color-icon-top);
+  margin-right: 10px;
+}
+
 .column-left .top-left .notification{
   height: 35%;
   background-color: var(--light-blue);
+}
+
+.column-left .top-left .notification .not-l{
+  width: 20%;
+}
+
+.column-left .top-left .notification .not-l .circle{
+  background-color: white;
+}
+
+.column-left .top-left .notification .not-l .circle i{
+  font-size: 1.4rem;
+  color: var(--light-blue);
+}
+
+.column-left .top-left .notification .not-r{
+  width: 80%;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.column-left .top-left .notification .not-r a{
+  color: var(--dark-grey);
+  font-size: .9rem;
 }
 
 .column-left .top-left .search{
@@ -121,6 +175,10 @@ body{
     height: 100%;
   }
 
+  .column-left .top-left .account .icon{
+    display: none;
+  }
+
   .column-left .top-left .notification{
     display: none;
   }
@@ -142,7 +200,7 @@ body{
 
 /* Resolution Mobile */
 
-@media screen and (max-width:540px){
+@media screen and (max-width:541px){
 
   .column-left{
     display: none;
