@@ -98,15 +98,16 @@ body{
 
 .column-left .top-left .account{
   height: 40%;
+  border-right: 1px solid #D6D6D6;
 }
 
 .column-left .top-left .account .acc-l{
-  width: 50%;
+  width: 70px;
 }
 
 .column-left .top-left .account .acc-r{
   justify-content: flex-end;
-  width: 50%;
+  width: calc(100% - 70px);
   color: var(--color-icon-top);
   margin-right: 10px;
 }
@@ -117,7 +118,7 @@ body{
 }
 
 .column-left .top-left .notification .not-l{
-  width: 20%;
+  width: 75px;
 }
 
 .column-left .top-left .notification .not-l .circle{
@@ -125,13 +126,12 @@ body{
 }
 
 .column-left .top-left .notification .not-l .circle i{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--light-blue);
 }
 
 .column-left .top-left .notification .not-r{
-  width: 80%;
-  padding-left: 10px;
+  width: calc(100% - 70px);
   font-weight: bold;
 }
 
@@ -146,30 +146,35 @@ body{
 
 .column-left .top-left .search{
   height:20%;
-  width: 100%;  
+  width: 100%;
+  background-color: #FAFAFA;  
 }
 
 .column-left .top-left .search .glass{
   background-color: white;
   height: 80%;
+  border: 1px solid #F5F5F5;
+  border-right: none;
 }
 
 .column-left .top-left .search .fa-magnifying-glass{
   font-size: .7rem;
   color: var(--span-card);
-  padding: 5px 0 5px 10px;
+  padding: 5px 5px 5px 10px;
 }
 
 .column-left .top-left .search input{  
-  width: 90%;
+  width: 87%;
   height: 80%;  
-  border: none;
+  border: 1px solid #F5F5F5;
+  border-left: none;
 }
 
 .column-left .top-left .search input::placeholder{
   color: var(--color-icon-top);
   font-size: .7rem;
   padding-left: 20px;
+  
 }
 
 .column-left .bottom-left{
@@ -283,6 +288,7 @@ body{
   color: #B9C1BB;
   font-size: .9rem;
   padding-top: 10px;
+  padding-left: 5px;
 }
 
 .column-right .center-right .details-message span{
@@ -340,14 +346,15 @@ body{
 
   .column-left .top-left{
     height: 10%;
+
   }
 
   .column-left .top-left .account{
     height: 100%;
-    padding-left: 15px;
+    width: 100%;
   }
 
-  .column-left .top-left .account .icon{
+  .column-left .top-left .account .acc-r{
     display: none;
   }
 
@@ -364,7 +371,7 @@ body{
   }
 
   .column-left .bottom-left .card .card-l{
-    padding-left: 15px;
+    width: 100%;
   }
 
   .column-left .bottom-left .card .card-c,
