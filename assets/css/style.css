@@ -251,12 +251,14 @@ body{
   align-self: flex-end;
   margin-right: 50px;
   margin-bottom: 10px;
+  background-color: #D5F9BA;
 }
 
 .column-right .center-right .sent-message{
   align-self: flex-start;
   margin-left: 50px;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 .column-right .bottom-right{
