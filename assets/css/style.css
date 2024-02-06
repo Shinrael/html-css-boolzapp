@@ -53,7 +53,7 @@
 
 .icon{
   font-size: 1.2rem;
-  padding: 0 12px;
+  padding: 0 8px;
 }
 
 .zoom-icon{
@@ -208,6 +208,31 @@ body{
   background-color: var(--light-grey);
 }
 
+.column-right .top-right .active-profile{
+  width: 70px;
+  height: 100%;
+}
+
+.column-right .top-right .last-login{
+  align-items: flex-start;
+  width: calc(100% - 70px - 150px);
+  height: 100%;
+}
+
+.column-right .top-right .last-login span{
+  font-size: .8rem;
+  color: var(--color-icon-bottom);
+  font-weight: bold;
+}
+
+.column-right .top-right .active-icon{
+  width: 150px;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: var(--color-icon-top);
+}
+
 .column-right .center-right{
   height: 80%;
   overflow-y: scroll;
@@ -285,4 +310,7 @@ body{
     width: 100%;
   }
 
+  .column-right .top-right .active-icon{
+    display: none;
+  }
 }
