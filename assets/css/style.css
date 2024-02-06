@@ -343,4 +343,13 @@ body{
   .column-right .top-right .active-icon{
     display: none;
   }
+
+  .column-right .bottom-right .emote,
+  .column-right .bottom-right .register-audio{
+    display: none;
+  }
+
+  .column-right .bottom-right .message {
+    width: 100%;
+  }
 }
