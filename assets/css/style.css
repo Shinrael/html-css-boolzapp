@@ -137,29 +137,30 @@ body{
 
 .column-left .top-left .search{
   height:20%;
-  position: relative;
+  width: 100%;  
+}
+
+.column-left .top-left .search .glass{
+  background-color: white;
+  height: 80%;
 }
 
 .column-left .top-left .search .fa-magnifying-glass{
-  position: absolute;
-  z-index: 2;
-  left: 18px;
-  top: 10px;
-  font-size: .8rem;
+  font-size: .7rem;
   color: var(--span-card);
+  padding: 5px 0 5px 10px;
 }
 
-.column-left .top-left .search input{
-  width: 95%;
+.column-left .top-left .search input{  
+  width: 90%;
   height: 80%;  
   border: none;
-  position: absolute;
 }
 
 .column-left .top-left .search input::placeholder{
   color: var(--color-icon-top);
-  font-size: .8rem;
-  padding-left: 40px;
+  font-size: .7rem;
+  padding-left: 20px;
 }
 
 .column-left .bottom-left{
@@ -221,7 +222,7 @@ body{
 
 /* Resolution Tablet */
 
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
   .container{
     width: 100%;
     height: 100%;
@@ -274,7 +275,7 @@ body{
 
 /* Resolution Mobile */
 
-@media screen and (max-width:541px){
+@media screen and (max-width:540px){
 
   .column-left{
     display: none;
