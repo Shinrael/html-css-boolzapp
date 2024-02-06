@@ -245,6 +245,36 @@ body{
   background-color: var(--bar-message);
 }
 
+.column-right .bottom-right .emote{
+  width: 75px;
+  height: 100%;
+  font-size: 1.5rem;
+  color: var(--color-icon-bottom);
+}
+
+.column-right .bottom-right .message{
+  width: calc(100% - 150px);
+  height: 100%;
+}
+
+.column-right .bottom-right .message input{
+  width: 99%;
+  height: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+.column-right .bottom-right .message input::placeholder{
+  padding-left: 15px;
+}
+
+.column-right .bottom-right .register-audio{
+  width: 75px;
+  height: 100%;
+  font-size: 1.5rem;
+  color: var(--color-icon-bottom);
+}
+
 /* Resolution Tablet */
 
 @media screen and (max-width:991px){
