@@ -62,6 +62,12 @@
   font-size: 1.5rem;
 }
 
+.cloud{
+  width: 55%;
+  height: 130px;
+  border-radius: 10px;
+}
+
 /* CSS */
 
 body{
@@ -238,6 +244,19 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
   background-image: url(../img/mine.jpg);
+  padding-top: 30px;
+}
+
+.column-right .center-right .received-message{
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.column-right .center-right .sent-message{
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 .column-right .bottom-right{
