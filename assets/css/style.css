@@ -273,14 +273,14 @@ body{
 
 .column-right .center-right .received-message{
   align-self: flex-end;
-  margin-right: 50px;
+  margin-right: 5%;
   margin-bottom: 10px;
   background-color: #D5F9BA;
 }
 
 .column-right .center-right .sent-message{
   align-self: flex-start;
-  margin-left: 50px;
+  margin-left: 5%;
   margin-bottom: 10px;
   background-color: white;
 }
@@ -333,10 +333,11 @@ body{
   position: absolute;
   top: 25px;
   right: 0px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   display: none;
 }
 
-.column-right .center-right .chevron-message i:hover .chevron-hover {
+.column-right .center-right .chevron-message:hover .chevron-hover {
   display: block;
 }
 
